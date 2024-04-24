@@ -1,80 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --lora-font-family: "Lora";
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: medium;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font: var(--lora-font-family);
+  font-weight: b;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #333;
+}
 
 h1 {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #B1B2FF;
-    border-radius: 5%;
-    padding: 10px 200px;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3,
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+  color: #555;
 }
 
 .container {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.left,
+.right {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 
 .left {
-    flex: 3;
-    background-color: #AAC4FF;
-    padding: 20px;
+  flex: 3;
 }
 
 .right {
-    flex: 1;
-    background-color: #D2DAFF;
-    padding: 20px;
-    font-size: small;
+  flex: 1;
 }
 
-/* Reset some default styles */
-body {
-    font-family: Arial, sans-serif;
-    font-size: small;
-    background-color: #E4F1FF;
-    text-align: left;
-    margin: 0;
-    padding: 20px;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.experience {
-    font-weight: bolder;
+li {
+  margin-bottom: 10px;
+}
+
+.experience,
+.years {
+  font-weight: bold;
 }
 
 .years {
-    font-style: italic;
+  font-style: italic;
 }
 
+footer {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 
-
-/* Style the header */
-/* header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-} */
-
-/* Style the main content section */
-/* .main-content {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-} */
-
-/* Style the side column */
-/* .side-column {
-    width: 300px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
-
-/* Define styles for a div with class "container" */
-/* .container {
-    /* Your CSS rules go here 
-    width: 100%;
-    padding: 20px;
-    background-color: #f0f0f0;} */
-
-/* .centered {
-    text-align: center;
-} */
-/* Style headings, paragraphs, lists, and other elements as needed */
-/* You can add more specific styles here */
+h4 {
+  text-align: center;
+}
